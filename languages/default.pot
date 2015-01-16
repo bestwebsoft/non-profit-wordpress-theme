@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nonprofit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-10 22:23+0200\n"
+"PO-Revision-Date: 2014-12-10 22:23+0200\n"
+"Last-Translator: Artiko <bwsuanav@gmail.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n;_nx:1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid "Not Found"
+msgstr ""
+
+#: ../404.php:16
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../archive.php:23 ../category.php:23 ../image.php:25 ../index.php:29
+#: ../search.php:22 ../single.php:21 ../tag.php:25
+msgid "Posted on"
+msgstr ""
+
+#: ../archive.php:35 ../category.php:35 ../image.php:28 ../index.php:40
+#: ../search.php:34 ../single.php:33 ../tag.php:37
+msgid "in"
+msgstr ""
+
+#: ../archive.php:37 ../category.php:37 ../functions.php:342
+#: ../functions.php:349 ../image.php:29 ../index.php:42 ../search.php:36
+#: ../single.php:35 ../tag.php:39
+msgid "Edit"
+msgstr ""
+
+#: ../archive.php:66 ../category.php:66 ../index.php:76 ../search.php:65
+#: ../tag.php:68
+msgid "Nothing Found"
+msgstr ""
+
+#: ../archive.php:69 ../category.php:69 ../index.php:79 ../page.php:43
+#: ../search.php:68 ../tag.php:71
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: ../comments.php:20
+#, php-format
+msgid "One thought on %2$s"
+msgid_plural "%1$s thoughts on %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../footer.php:7
+msgid "Powered by"
+msgstr ""
+
+#: ../footer.php:7
+msgid "and"
+msgstr ""
+
+#: ../functions.php:100
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:108
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../functions.php:121
+msgid "Add to slider"
+msgstr ""
+
+#: ../functions.php:131
+msgid "To add this"
+msgstr ""
+
+#: ../functions.php:131
+msgid "into the slider, mark it"
+msgstr ""
+
+#: ../functions.php:170
+msgid "Choose file"
+msgstr ""
+
+#: ../functions.php:171
+msgid "File is not selected"
+msgstr ""
+
+#: ../functions.php:192
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:202 ../functions.php:269
+msgid "Home"
+msgstr ""
+
+#: ../functions.php:257
+msgid "Author archives"
+msgstr ""
+
+#: ../functions.php:265 ../functions.php:305
+msgid "Page not found"
+msgstr ""
+
+#: ../functions.php:281
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../functions.php:284
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../functions.php:287
+msgid "Search Results for:"
+msgstr ""
+
+#: ../functions.php:291
+#, php-format
+msgid "All posts by %s"
+msgstr ""
+
+#: ../functions.php:295
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../functions.php:297
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../functions.php:299
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../functions.php:301
+msgid "Archives"
+msgstr ""
+
+#: ../functions.php:308
+msgid "Portfolio"
+msgstr ""
+
+#: ../functions.php:311
+msgid "Gallery"
+msgstr ""
+
+#: ../functions.php:342
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:349 ../image.php:27
+msgid "at"
+msgstr ""
+
+#: ../functions.php:350
+msgid "says:"
+msgstr ""
+
+#: ../functions.php:353
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../gallery-single-template.php:19
+msgid "Download high resolution image"
+msgstr ""
+
+#: ../gallery-single-template.php:88
+msgid "Sorry, nothing found."
+msgstr ""
+
+#: ../gallery-single-template.php:115
+msgid "Image"
+msgstr ""
+
+#: ../header.php:41
+msgid "Menu"
+msgstr ""
+
+#: ../image.php:49
+msgid "Previous Image"
+msgstr ""
+
+#: ../image.php:55
+msgid "Next Image"
+msgstr ""
+
+#: ../portfolio-post.php:159 ../portfolio.php:173
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../portfolio.php:19 ../portfolio.php:20
+msgid "Executor Profile"
+msgstr ""
+
+#: ../portfolio.php:163
+msgid "Read more"
+msgstr ""
+
+#: ../searchform.php:10
+msgid "Enter search keyword"
+msgstr ""
+
+#: ../slider.php:30
+msgid "Learn More"
+msgstr ""
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid ""
+#~ "<cite class=\"fn\">%s</cite>&nbsp;&nbsp<span class=\"says\">says:</span>"
+#~ msgstr "сказал"
