@@ -1,7 +1,7 @@
 <a href="http://bestwebsoft.com/products/non-profit/" target=_blank>Non Profit WordPress Theme</a>
 -----------------------------
 
-Non Profit is a streamlined responsive theme that unites the most recent trends in functionality development under the aegis of style and user-friendliness.
+Non Profit is a fresh and airy theme that will introduce your content in a clear and well-organized manner. Not too fancy and overcrowded with visual elements, this theme will be perfect for those, who want their ideas to be presented in the spotlight. At the same time, you can give way to your creativity and change the look of your website in a few clicks, as this feature-rich theme comes packed with really simple and handy customization options. Developed in accordance with the latest theme design trends, Non Profit will be a professional solution for a whole range of various websites - from personal blogs to research centers, educational facilities, funds, science news, travel guides and much more.
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2015/01/xnon-profit-wp-banner.jpg.pagespeed.ic.dTCvxsmYFq.jpg" />
 
