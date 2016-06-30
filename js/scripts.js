@@ -69,7 +69,7 @@
 		*/
 		var test = $( 'select' ).size();
 		for ( var k = 0; k < test; k++ ) {
-			$( 'select' ).eq( k ).css( 'display', 'none' );
+			$( 'select' ).eq( k ).attr('style', 'display: none !important');
 			$( 'select' ).eq( k ).after( CreateSelect( k ) );		
 		}
 		$( '.nonprofit-select' ).click( function() {
@@ -98,7 +98,10 @@
 		/* archive-dropdown widget functional */
 		$( "select[name='archive-dropdown']" ).next( '.nonprofit-select' ).find( '.select-option' ).click( function() {
 			location.href = $( this ).attr( 'value' );
-		});		
+		});
+		$( "select[name='mltlngg_change_display_lang']" ).next( '.nonprofit-select' ).find( '.select-option' ).click( function() {
+			location.href = $( this ).attr( 'value' );
+		});				
 		/* category-dropdown widget functional */
 		$( '#cat' ).next( '.nonprofit-select' ).find( '.select-option' ).click( function() {
 			location.href = script_loc.nonprofit_home_url + '?cat=' + $( this ).attr( 'value' );

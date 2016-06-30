@@ -1,0 +1,219 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Non Profit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-30 17:58+0300\n"
+"PO-Revision-Date: 2014-12-10 22:23+0200\n"
+"Last-Translator: Artiko <bwsuanav@gmail.com>\n"
+"Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n;_nx:1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+#, fuzzy
+msgid "Not Found"
+msgstr "Ничего не найдено"
+
+#: ../404.php:16 ../archive.php:70 ../index.php:86 ../page.php:45
+#: ../search.php:69
+#, fuzzy
+msgid "The page you are looking for is not found. Maybe try a search?"
+msgstr "Запрашиваемая страница не найдена. Попробуйте воспользоваться поиском."
+
+#: ../archive.php:26 ../image.php:27 ../index.php:37 ../search.php:25
+#: ../single.php:23
+#, fuzzy
+msgid "Posted on"
+msgstr "Опубликовано"
+
+#: ../archive.php:36 ../image.php:31 ../index.php:47 ../search.php:35
+#: ../single.php:33
+msgid "in"
+msgstr ""
+
+#: ../archive.php:39 ../functions.php:362 ../functions.php:370 ../image.php:33
+#: ../index.php:50 ../page.php:15 ../search.php:38 ../single.php:36
+#, fuzzy
+msgid "Edit"
+msgstr "Править"
+
+#: ../archive.php:67 ../index.php:83 ../search.php:66
+#, fuzzy
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../comments.php:20
+#, php-format
+msgid "One thought on %2$s"
+msgid_plural "%1$s thoughts on %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../footer.php:4
+#, fuzzy, php-format
+msgid "Powered by %1$s and %2$s"
+msgstr "Создано  %1$s и %2$s"
+
+#: ../functions.php:42
+#, fuzzy
+msgid "Header Menu"
+msgstr "Меню в хедере"
+
+#: ../functions.php:123
+#, fuzzy
+msgid "Right Sidebar"
+msgstr "Правый сайдбар"
+
+#: ../functions.php:137
+#, fuzzy
+msgid "Add to slider"
+msgstr "Добавить в слайдер"
+
+#: ../functions.php:148
+#, fuzzy
+msgid "To add this"
+msgstr "Чтобы добавить"
+
+#: ../functions.php:148
+#, fuzzy
+msgid "into the slider, mark it"
+msgstr "в слайдер, поставьте галочку"
+
+#: ../functions.php:222
+#, fuzzy
+msgid "Choose file"
+msgstr "Выберите файл"
+
+#: ../functions.php:223
+#, fuzzy
+msgid "File is not selected"
+msgstr "Файл выбран"
+
+#: ../functions.php:236 ../functions.php:288
+#, fuzzy
+msgid "Home"
+msgstr "Главная"
+
+#: ../functions.php:279
+#, fuzzy
+msgid "Author archives"
+msgstr "Архив автора"
+
+#: ../functions.php:285 ../functions.php:322
+#, fuzzy
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: ../functions.php:302
+#, fuzzy, php-format
+msgid "Category Archives: %s"
+msgstr "Архив категорий:  %s"
+
+#: ../functions.php:304
+#, fuzzy, php-format
+msgid "Tag Archives: %s"
+msgstr "Архив тегов: %s"
+
+#: ../functions.php:306
+#, fuzzy
+msgid "Search Results for:"
+msgstr "Результаты поиска:"
+
+#: ../functions.php:309
+#, fuzzy, php-format
+msgid "All posts by %s"
+msgstr "Все записи %s"
+
+#: ../functions.php:312
+#, fuzzy, php-format
+msgid "Daily Archives: %s"
+msgstr "Архив за день:  %s"
+
+#: ../functions.php:314
+#, fuzzy, php-format
+msgid "Monthly Archives: %s"
+msgstr "Архив за  месяц:  %s"
+
+#: ../functions.php:316
+#, fuzzy, php-format
+msgid "Yearly Archives: %s"
+msgstr "Архив за год:  %s"
+
+#: ../functions.php:318
+#, fuzzy
+msgid "Archives"
+msgstr "Архивы:"
+
+#: ../functions.php:324
+#, fuzzy
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: ../functions.php:326
+#, fuzzy
+msgid "Gallery"
+msgstr "Галерея"
+
+#: ../functions.php:360
+#, fuzzy
+msgid "Pingback:"
+msgstr "Ответ:"
+
+#: ../functions.php:370
+msgid "at"
+msgstr ""
+
+#: ../functions.php:372
+#, fuzzy
+msgid "says:"
+msgstr "сказал:"
+
+#: ../functions.php:375
+#, fuzzy
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш коментарий ждет одобрения"
+
+#: ../header.php:39
+#, fuzzy
+msgid "Menu"
+msgstr "Меню"
+
+#: ../image.php:30
+#, fuzzy
+msgid "Open image in full size"
+msgstr "Открыть изображение в полном размере"
+
+#: ../image.php:53
+#, fuzzy
+msgid "Previous Image"
+msgstr "Предыдущая картинка"
+
+#: ../image.php:59
+#, fuzzy
+msgid "Next Image"
+msgstr "Следующая картинка"
+
+#: ../searchform.php:10
+#, fuzzy
+msgid "Enter search keyword"
+msgstr "Введите искомое"
+
+#: ../slider.php:32
+#, fuzzy
+msgid "Learn More"
+msgstr "Подробнее"
+
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
+
+#~ msgid "<cite class=\"fn\">%s</cite>&nbsp;&nbsp<span class=\"says\">says:</span>"
+#~ msgstr "сказал"

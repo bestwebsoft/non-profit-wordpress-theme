@@ -4,7 +4,7 @@
  * The area of the page that contains comments and the comment form.
  *
  * @subpackage Non_Profit
- * @since Non Profit 1.0
+ * @since      Non Profit 1.0
  */
 
 /*
@@ -17,8 +17,8 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 	<?php if ( have_comments() ) { ?>
 		<h2 class="nonpofit-coments comments-title">
-			<?php printf ( _n( 'One thought on %2$s', '%1$s thoughts on %2$s', get_comments_number(),  'nonprofit' ), number_format_i18n( get_comments_number() ), '<span>'. '&ldquo;'. get_the_title() .'&rdquo;'. '</span>' ); ?>
-		</h2>	
+			<?php printf( _n( 'One thought on %2$s', '%1$s thoughts on %2$s', get_comments_number(), 'non-profit' ), number_format_i18n( get_comments_number() ), '<span>' . '&ldquo;' . get_the_title() . '&rdquo;' . '</span>' ); ?>
+		</h2>
 		<?php if ( get_comment_pages_count() > 5 || get_option( 'page_comments' ) ) { ?>
 			<nav id="comment_nav_above" class="navigation comment-navigation nonprofit-nav-link" role="navigation">
 				<div class="nonprofit-nav-previous"><?php previous_comments_link(); ?></div>
@@ -27,16 +27,16 @@ if ( post_password_required() ) {
 		<?php } // Check for comment navigation. ?>
 		<ol class="nonpofit-comment-list">
 			<?php wp_list_comments( array(
-										'callback'	 => 'nonprofit_comment',
-										'short_ping' => true,
-										) ); ?>
+				'callback'   => 'nonprofit_comment',
+				'short_ping' => true,
+			) ); ?>
 		</ol><!-- .comment-list -->
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>
 			<nav id="comment_nav_below" class="navigation comment-navigation nonprofit-nav-link" role="navigation">
 				<div class="nonprofit-nav-previous"> <?php previous_comments_link(); ?></div>
 				<div class="nonprofit-nav-next"> <?php next_comments_link(); ?></div>
 			</nav><!-- #comment-nav-below -->
-		<?php } // Check for comment navigation. 
-	} // have_comments() 
+		<?php } // Check for comment navigation.
+	} // have_comments()
 	comment_form(); ?>
 </div><!-- #comments -->
