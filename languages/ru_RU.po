@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Non Profit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-30 17:58+0300\n"
-"PO-Revision-Date: 2016-06-30 17:58+0300\n"
+"POT-Creation-Date: 2016-07-05 12:54+0300\n"
+"PO-Revision-Date: 2016-07-05 12:54+0300\n"
 "Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr_e\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -136,22 +136,10 @@ msgstr "Архив за день:  %s"
 msgid "Monthly Archives: %s"
 msgstr "Архив за  месяц:  %s"
 
-#: functions.php:314
-#, fuzzy
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
 #: functions.php:316
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Архив за год:  %s"
-
-#: functions.php:316
-#, fuzzy
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
 
 #: functions.php:318
 msgid "Archives"
@@ -209,6 +197,16 @@ msgstr "Введите поисковой запрос"
 #: slider.php:32
 msgid "Learn More"
 msgstr "Читать далее"
+
+#, fuzzy
+#~ msgctxt "monthly archives date format"
+#~ msgid "F Y"
+#~ msgstr "F Y"
+
+#, fuzzy
+#~ msgctxt "yearly archives date format"
+#~ msgid "Y"
+#~ msgstr "Y"
 
 #~ msgid "Page %s"
 #~ msgstr "Страница %s"

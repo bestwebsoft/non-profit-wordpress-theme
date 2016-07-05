@@ -5,7 +5,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: two-columns, right-sidebar, threaded-comments, sticky-post, custom-header, custom-background, custom-menu, editor-style, translation-ready, featured-images, post-formats
 Requires at least: 4.2
 Tested up to:  4.5.3
-Stable tag: 2.0
+Stable tag: 2.1
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Non Profit WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -130,6 +130,9 @@ You can do this in Posts section > Add new or edit existing post > Set featured 
 
 == Changelog ==
 
+= v2.1 - 05.07.2016 =
+* Update: Translations has been updated.
+
 = v2.0 - 30.06.2016 =
 * Bugfix: Fixed mismatch coding standards.
 * Bugfix: Fixed theme styles.
@@ -193,6 +196,9 @@ You can do this in Posts section > Add new or edit existing post > Set featured 
 * Release date of Non Profit
 
 == Upgrade Notice ==
+
+= V2.1 =
+Translations has been updated.
 
 = V2.0 =
 Fixed mismatch coding standards. Fixed theme styles. Unnecessary files category.php and tag.php have been removed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.

@@ -311,9 +311,9 @@ function nonprofit_page_title() {
 				if ( is_day() ) {
 					$page_title = sprintf( __( 'Daily Archives: %s', 'non-profit' ), get_the_date() );
 				} elseif ( is_month() ) {
-					$page_title = sprintf( __( 'Monthly Archives: %s', 'non-profit' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'non-profit' ) ) );
+					$page_title = sprintf( __( 'Monthly Archives: %s', 'non-profit' ), get_the_date( 'F Y' ) );
 				} elseif ( is_year() ) {
-					$page_title = sprintf( __( 'Yearly Archives: %s', 'non-profit' ), get_the_date( _x( 'Y', 'yearly archives date format', 'non-profit' ) ) );
+					$page_title = sprintf( __( 'Yearly Archives: %s', 'non-profit' ), get_the_date( 'Y' ) );
 				} else {
 					$page_title = __( 'Archives', 'non-profit' );
 				}

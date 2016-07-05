@@ -7,7 +7,7 @@
 ?>
 <div class="nonprofit-search">
 	<form action="<?php echo esc_url( home_url() ); ?>" method="get">
-		<input type="text" placeholder="<?php _e( 'Enter search keyword', 'non-profit' ); ?>" class="form" name="s" value="<?php echo get_search_query(); ?>">
+		<input type="text" placeholder="<?php esc_attr_e( 'Enter search keyword', 'non-profit' ); ?>" class="form" name="s" value="<?php echo get_search_query(); ?>">
 		<input type="submit" class="header-image" value="">
 	</form>
 	<div class="nonprofit-clear"></div>
