@@ -73,11 +73,6 @@ function nonprofit_setup() {
 	add_theme_support( 'title-tag' );
 }
 
-function nonprofit_html5shiv_load() {
-	$nonprofit_html5shiv = '<!--[if lt IE 9]><script src="' . get_template_directory_uri() . '/js/html5shiv.js' . '" ></script><![endif]-->';
-	echo $nonprofit_html5shiv;
-}
-
 /**
  * Style the text displayed on the blog.
  *
@@ -217,6 +212,8 @@ function nonprofit_scripts() {
 	wp_enqueue_style( 'nonprofit-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'nonprofit-script', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ) );
 	wp_enqueue_script( 'nonprofit-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'nonprofit-html5', get_template_directory_uri() . '/js/html5shiv.js' );
+	wp_script_add_data( 'nonprofit-html5', 'conditional', 'lt IE 9' );
 	/*array with elements to localize in scripts*/
 	$script_localization = array(
 		'choose_file'          => __( 'Choose file', 'non-profit' ),
@@ -461,8 +458,6 @@ function nonprofit_get_link_url() {
  *
  */
 add_action( 'after_setup_theme', 'nonprofit_setup' );
-
-add_action( 'wp_head', 'nonprofit_html5shiv_load' );
 /**
  * Register our sidebars and widgetized areas.
  *

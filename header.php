@@ -11,14 +11,16 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php wp_head(); ?>
+	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php endif;
+	wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
 <div id="wrapper">
 	<header>
 		<div class="nonprofit-header">
-			<img class="nonprofit-header-bgimg" src="<?php esc_url( get_header_image() ); ?>" height="<?php echo esc_html( get_custom_header()->height ); ?>" width="<?php echo esc_html( get_custom_header()->width ); ?>" alt="" />
+			<img class="nonprofit-header-bgimg" src="<?php header_image(); ?>" height="<?php echo esc_html( get_custom_header()->height ); ?>" width="<?php echo esc_html( get_custom_header()->width ); ?>" alt="" />
 			<div id="nonprofit-header-top">
 				<div id="nonprofit-title-slogan">
 					<h1 id="nonprofit_title">
@@ -52,9 +54,9 @@
 		</div>
 	</section>
 	<?php if ( is_front_page() ) { ?>
-		<section>
-			<div id="nonprofit_slider">
-				<?php get_template_part( 'slider' ); ?>
-			</div> <!-- end div id="slider" -->
-		</section>
-	<?php }
+	<section>
+		<div id="nonprofit_slider">
+			<?php get_template_part( 'slider' ); ?>
+		</div> <!-- end div id="slider" -->
+	</section>
+<?php }

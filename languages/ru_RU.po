@@ -1,21 +1,24 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Non Profit\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-05 12:54+0300\n"
-"PO-Revision-Date: 2016-07-05 12:54+0300\n"
-"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
-"Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
-"Language: ru_RU\n"
+"Project-Id-Version: Non Profit v2.2\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-23 19:27+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr_e\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:13
@@ -31,12 +34,12 @@ msgstr "Запрашиваемая страница не найдена. Поп�
 msgid "Posted on"
 msgstr "Опубликовано"
 
-#: archive.php:36 image.php:31 index.php:47 search.php:35 single.php:33
+#: archive.php:36 image.php:31 index.php:47 search.php:35 single.php:28
 msgid "in"
 msgstr "в"
 
-#: archive.php:39 functions.php:362 functions.php:370 image.php:33
-#: index.php:50 page.php:15 search.php:38 single.php:36
+#: archive.php:39 functions.php:359 functions.php:367 image.php:33
+#: index.php:50 page.php:15 search.php:38 single.php:31
 msgid "Edit"
 msgstr "Редактировать"
 
@@ -61,115 +64,115 @@ msgstr "Создано  %1$s и %2$s"
 msgid "Header Menu"
 msgstr "Меню в хедере"
 
-#: functions.php:123
+#: functions.php:118
 msgid "Right Sidebar"
 msgstr "Правый сайдбар"
 
-#: functions.php:137
+#: functions.php:132
 msgid "Add to slider"
 msgstr "Добавить в слайдер"
 
-#: functions.php:148
+#: functions.php:143
 msgid "To add this"
 msgstr "Чтобы добавить"
 
-#: functions.php:148
+#: functions.php:143
 msgid "into the slider, mark it"
 msgstr "в слайдер, поставьте галочку"
 
-#: functions.php:179
+#: functions.php:174
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:179
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr ""
 
-#: functions.php:222
+#: functions.php:219
 msgid "Choose file"
 msgstr "Выберите файл"
 
-#: functions.php:223
+#: functions.php:220
 msgid "File is not selected"
 msgstr "Файл не выбран"
 
-#: functions.php:236 functions.php:288
+#: functions.php:233 functions.php:285
 msgid "Home"
 msgstr "Главная"
 
-#: functions.php:279
+#: functions.php:276
 msgid "Author archives"
 msgstr "Архив автора"
 
-#: functions.php:285 functions.php:322
+#: functions.php:282 functions.php:319
 msgid "Page not found"
 msgstr "Страница не найдена"
 
-#: functions.php:302
+#: functions.php:299
 #, php-format
 msgid "Category Archives: %s"
 msgstr "Архив категорий:  %s"
 
-#: functions.php:304
+#: functions.php:301
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Архив тегов: %s"
 
-#: functions.php:306
+#: functions.php:303
 msgid "Search Results for:"
 msgstr "Результаты поиска по запросу:"
 
-#: functions.php:309
+#: functions.php:306
 #, php-format
 msgid "All posts by %s"
 msgstr "Все записи %s"
 
-#: functions.php:312
+#: functions.php:309
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Архив за день:  %s"
 
-#: functions.php:314
+#: functions.php:311
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Архив за  месяц:  %s"
 
-#: functions.php:316
+#: functions.php:313
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Архив за год:  %s"
 
-#: functions.php:318
+#: functions.php:315
 msgid "Archives"
 msgstr "Архивы"
 
-#: functions.php:324
+#: functions.php:321
 msgid "Portfolio"
 msgstr "Портфолио"
 
-#: functions.php:326
+#: functions.php:323
 msgid "Gallery"
 msgstr "Галерея"
 
-#: functions.php:360
+#: functions.php:357
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: functions.php:370
+#: functions.php:367
 msgid "at"
 msgstr "в"
 
-#: functions.php:372
+#: functions.php:369
 msgid "says:"
 msgstr "сказал:"
 
-#: functions.php:375
+#: functions.php:372
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш коментарий ждет одобрения"
 
-#: header.php:39
+#: header.php:41
 msgid "Menu"
 msgstr "Меню"
 

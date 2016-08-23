@@ -21,14 +21,9 @@ get_header(); ?>
 							<div class="nonprofit-post-date">
 								<p>
 									<?php echo __( 'Posted on', 'non-profit' );
-									if ( get_the_title() ) {
 										$archive_year  = get_the_time( 'Y' );
 										$archive_month = get_the_time( 'm' ); ?>
-										<a href="<?php echo esc_url( get_month_link( $archive_year, $archive_month ) ); ?>">
-									<?php } else { ?>
-										<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-									<?php }
-									echo get_the_date(); ?></a>
+										<a href="<?php echo esc_url( get_month_link( $archive_year, $archive_month ) ); ?>"><?php echo get_the_date(); ?></a>
 									<?php if ( has_category() ) {
 										echo __( 'in', 'non-profit' ) . '&nbsp;';
 										the_category( ', ' );

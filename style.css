@@ -4,7 +4,7 @@ Theme URI: http://bestweblayout.com/products/non-profit/
 Author: BestWebLayout
 Author URI: http://bestweblayout.com/
 Description: Non Profit is a fresh and airy theme that will introduce your content in a clear and well-organized manner. Not too fancy and overcrowded with visual elements, this theme will be perfect for those, who want their ideas to be presented in the spotlight. At the same time, you can give way to your creativity and change the look of your website in a few clicks, as this feature-rich theme comes packed with really simple and handy customization options. Developed in accordance with the latest theme design trends, Non Profit will be a professional solution for a whole range of various websites - from personal blogs to research centers, educational facilities, funds, science news, travel guides and much more. Live demo: http://wp-demo-theme.bestweblayout.com/non-profit/
-Version: 2.1
+Version: 2.2
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: two-columns, right-sidebar, threaded-comments, sticky-post, custom-header, custom-background, custom-menu, editor-style, translation-ready, featured-images, post-formats
@@ -1974,7 +1974,7 @@ label.nonprofit-check-container {
 
 .nonprofit-post-content .nonprofit-select {
 	position: relative;
-	z-index: 10;
+	/*z-index: 10;*/
 	margin-top: 9px;
 	margin-bottom: 16px;
 	width: 222px;
@@ -2157,7 +2157,7 @@ label.nonprofit-check-container {
 
 .file-form {
 	position: relative;
-	padding: 11px 0 0 0;
+	padding: 6px 0 5px 0;
 	max-width: 451px;
 	height: 60px;
 	-webkit-border-radius: 3px;

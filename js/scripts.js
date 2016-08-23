@@ -20,14 +20,14 @@
 		*/
 		$( '.flexslider' ).flexslider( { /*initial slider*/
 			animation: "fade",
-			directionNav: false,
+			directionNav: false
 		});
 		/* 
 		* Checkbox.
 		*/
 		$( "input[type='checkbox']" ).wrap( '<label class="nonprofit-check-container"><div class="nonprofit-check"></div></label>' );	
 		// active Realization
-		$( '.nonprofit-check' ).click( function () {			
+		$( '.nonprofit-check' ).click( function () {
 			if ( $( this ).find( "input[type='checkbox']" ).is( ':checked' ) ) {
 				$( this ).addClass( 'nonprofit-active' );
 			}
@@ -70,21 +70,24 @@
 		var test = $( 'select' ).size();
 		for ( var k = 0; k < test; k++ ) {
 			$( 'select' ).eq( k ).attr('style', 'display: none !important');
-			$( 'select' ).eq( k ).after( CreateSelect( k ) );		
+			$( 'select' ).eq( k ).after( CreateSelect( k ) );
 		}
-		$( '.nonprofit-select' ).click( function() {
-			if ( $( this ).find( '.select-options' ).css( 'display' ) == 'none' ) {
-				$( this ).css( 'z-index', '100' );
-				$( this ).find( '.select-options' ).css( {
-					'display': 'block'
-				});
-			} else {
-				$( this ).css( 'z-index', '10' );
-				$( this ).find( '.select-options' ).css( {
-					'display': 'none'
-				});
+
+		$( document ).on( 'click', function( e ) {
+			var container1 = $( '.nonprofit-select' );
+			if ( !container1.is( e.target ) && container1.has( e.target ).length === 0 ) {
+				container1.find( '.select-options' ).hide();
+			} else if ( container1.is( e.target ) || container1.has( e.target ).length !== 0 ) {
+				var container2 = $( e.target ).closest( '.nonprofit-select' );
+				if ( container2.find( '.select-options' ).is( ':visible' ) ) {
+					container2.find( '.select-options' ).hide();
+				} else {
+					container1.find( '.select-options' ).hide();
+					container2.find( '.select-options' ).show();
+				}
 			}
-		});
+		} );
+
 		$( '.nonprofit-select' ).find( '.select-option' ).click( function() {
 			$( this ).closest( '.select-options' ).find( '.select-option' ).removeClass( 'nonprofit-option-selected' );
 			$( this ).addClass( 'nonprofit-option-selected' )
@@ -101,18 +104,18 @@
 		});
 		$( "select[name='mltlngg_change_display_lang']" ).next( '.nonprofit-select' ).find( '.select-option' ).click( function() {
 			location.href = $( this ).attr( 'value' );
-		});				
+		});
 		/* category-dropdown widget functional */
 		$( '#cat' ).next( '.nonprofit-select' ).find( '.select-option' ).click( function() {
 			location.href = script_loc.nonprofit_home_url + '?cat=' + $( this ).attr( 'value' );
-		});		
+		});
 		/*
 		*Clear button.
 		*/
 		$( "input[type='reset']" ).click( function() {
 			/* reset checkboxes, radio, input:file */
 			$( '.nonprofit-check,.nonprofit-radio' ).removeClass( 'nonprofit-active' );
-			$( '.file-validator' ).text( 'File is not selected.' );
+			$( '.file-validator' ).text( script_loc.file_is_not_selected );
 		});
 		/*
 		*Function style for input [type="file"] 
@@ -121,10 +124,10 @@
 		$( "input[type='file']" ).hide();
 		$( '.wrap-file' ).append( '<div class="style-file"></div>' );
 		$( '.style-file' ).wrap( '<div class="file-form"></div>' );
-		$( '.style-file' ).append( '<span class="file-inner">Choose file...</span>' );
-		$( '.file-form' ).append( '<span class="file-validator">File is not selected.</span>' );
+		$( '.style-file' ).append( '<span class="file-inner">' + script_loc.choose_file + '</span>' );
+		$( '.file-form' ).append( '<span class="file-validator">' + script_loc.file_is_not_selected + '</span>' );
 		$( "input[type='file']" ).change( function() { 
-			$( '.file-validator' ).text( $( this ) [0].value );
+			$( '.file-validator' ).text( $( this )[0].files[0]['name'] );
 			});
 		$( '.file-validator' ).click( function() {
 			$( '.wrap-file input' ).trigger( 'click' );
@@ -168,12 +171,12 @@
 			$( '.menu-toggle' ).unbind( 'click' ).click( function() {
 				nonprofit.find( '.menu' ).toggle();
 				$( this ).toggleClass( 'toggled-on' );
-				} );		
+				} );
 			};
 		$.fn.clickMenu = function() {
-			$( '.main-navigation' ).find( 'a' ).on( 'touchstart touchmove touchend click', function( event ) {			
+			$( '.main-navigation' ).find( 'a' ).on( 'touchstart touchmove touchend click', function( event ) {
 				var el = $( this ).parent( 'li' );
-				var display = el.children( ".sub-menu:first" ).css( "display" )			
+				var display = el.children( ".sub-menu:first" ).css( "display" );
 				if ( !el.hasClass( 'focus' ) ) {
 					if( display =="block" ) {
 						event.stopPropagation();
@@ -183,7 +186,7 @@
 					}
 				}
 			} );
-		}
+		};
 			
 		/* Check viewport width on first load. */
 		if ( $( window ).width() <= 790 )
@@ -208,7 +211,7 @@
 					nonprofit.find( '.menu' ).removeAttr( 'style' );
 				}
 			}, 200 );
-		} );			
+		} );
 	});
 } )( jQuery );
 /* function for custom select */
@@ -238,7 +241,7 @@ function CreateSelect( k ) {
 				$( optgroups[i] ).addClass( 'select-optgroup' );
 				$( optgroups[i] )
 					.text( $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).attr( 'label' ) );
-			};
+			}
 			for ( var i = 0; i < count; i++ ) {
 				$( option_array ).append( optgroups[i] );
 				for ( var j = 0; j < $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).children().size(); j++ ) {
@@ -249,8 +252,8 @@ function CreateSelect( k ) {
 					$( option ).attr( 'name', z );
 					z++;
 					$( option_array ).append( option );
-				};
-			};
+				}
+			}
 		} else {
 			for ( var i = 0; i < $( 'select' ).eq( k ).find( 'option' ).size(); i++ ) {
 				var option = document.createElement( 'div' );
@@ -259,8 +262,8 @@ function CreateSelect( k ) {
 				$( option ).attr( 'name', i );
 				$( option ).text( $( 'select' ).eq( k ).find( 'option' ).eq( i ).text() );
 				$( option_array ).append( option );
-			};
-		};
+			}
+		}
 		$( select ).append( active_option );
 		$( select ).append( option_array );
 	} )( jQuery );
@@ -272,6 +275,6 @@ function createInputAttr() {
 		var size = $( 'input:file' ).size();
 		for ( var i = 0; i < size; i++ ) {
 			$( 'input:file' ).eq( i ).attr( 'id', 'file-' + i ).css( 'display', 'none' ).after( CreateFileInput( i ) );
-		};
+		}
 	} )( jQuery );
 }
